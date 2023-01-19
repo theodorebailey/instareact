@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 import { Routes, Route, useActionData } from 'react-router-dom';
 
 // Import all components
-import { Header, Navbar, Footer, PageTitle, PageContent, Login, Logout } from './components/common'
+import { Header, Navbar, Footer, PageTitle, PageContent } from './components/common'
 
 import './App.css';
 
@@ -21,10 +21,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <Login />  */}
-      {
-        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Logout onFormSwitch={toggleForm} />
-      } 
         <Routes>
           <Route path='/contact' element= { <PageTitle title='contact'>Contact</PageTitle> } />
           <Route path='/portfolio' element= { <PageTitle title='portfolio'>Portfolio</PageTitle> } />

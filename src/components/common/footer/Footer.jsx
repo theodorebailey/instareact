@@ -10,7 +10,11 @@ function Footer () {
             <hr className="footer-seperator"/>
             <section className="footer-social-media">
                 {/* Link to own Linkedin page */}
-                <a href="https://www.linkedin.com/in/theodore-bailey-software-developer" target="_blank">Linkedin</a>
+                <a href="https://www.linkedin.com/in/theodore-bailey-software-developer" target="_blank">instareact</a>
+                <br></br>
+                <div className="footer-info__returns">
+                        Company Policy
+                    </div>
             </section>
             <section className="footer-info">
                 <div className="footer-info-left">
@@ -19,13 +23,11 @@ function Footer () {
                     </div>
                     <div className="footer-info__returns">
                         Company Policy
-                        <br />
-                        Delivery Promise
                     </div>
                 </div>
                 <div className="footer-info-center">
                     <div className="footer-info__email">
-                        fridgeExcess@gmail.com
+                        instreact creation
                     </div>
                     <div className="footer-info__terms">
                         Terms and Conditions
@@ -38,9 +40,7 @@ function Footer () {
                         0123 4567 8910                      
                     </div>
                     <div className="footer-info__contact">
-                        Our Companies Story
-                        <br />
-                        Contact Details
+                        Our Company
                     </div>
                 </div>
             </section>

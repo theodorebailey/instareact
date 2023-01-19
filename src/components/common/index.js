@@ -10,8 +10,7 @@ import Navbar from './navbar';
 import Footer from './footer';
 import PageTitle from './page-title';
 import PageContent from './page-content';
-import Login from './login';
-import Logout from './logout';
+
 
 // export multiples
 export {
@@ -20,6 +19,4 @@ export {
     Footer,
     PageTitle,
     PageContent,
-    Login,
-    Logout
 }
