@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+
+// import react router Dom Components
+import { Routes, Route, useActionData } from 'react-router-dom';
+
+// Import all components
+import { Header, Navbar, Footer, PageTitle, PageContent, Login, Logout } from './components/common'
+
 import './App.css';
 
 function App() {
+
+  const [currentForm, setCurrentForm] = useState('login');
+
+  const toggleForm = (formName) => {
+
+    setCurrentForm(formName);
+
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      {/* <Login />  */}
+      {
+        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Logout onFormSwitch={toggleForm} />
+      } 
+        <Routes>
+          <Route path='/contact' element= { <PageTitle title='contact'>Contact</PageTitle> } />
+          <Route path='/portfolio' element= { <PageTitle title='portfolio'>Portfolio</PageTitle> } />
+          <Route path='/about' element= { <PageTitle title='about'>About</PageTitle> } />
+          <Route path='/' element= { <PageTitle title='home'>Home</PageTitle> } />
+        </Routes>
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
+// <PageTitle title='home' />
+// <PageTitle title='about' />
+// <PageTitle title='portfolio' />
