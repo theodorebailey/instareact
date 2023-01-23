@@ -1,11 +1,11 @@
-.navbar {
+navbar {
   /* fits elements inline on row */
     display: flex;
     /* decides direction elements will flex, in this case row */
     flex-direction: row;
   }
   
-  .navbar-item {
+  navbar-item {
     /* determines grid element layout */
     display: flex;
     /* align flex items */
@@ -20,4 +20,28 @@
     text-transform: uppercase;
     /* remove outline if applied */
     outline: none;
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
   }

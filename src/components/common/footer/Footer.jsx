@@ -10,11 +10,9 @@ function Footer () {
             <hr className="footer-seperator"/>
             <section className="footer-social-media">
                 {/* Link to own Linkedin page */}
-                <a href="https://www.linkedin.com/in/theodore-bailey-software-developer" target="_blank">instareact</a>
+                <a href="https://www.linkedin.com/in/theodore-bailey-software-developer" target="_blank">Linkedin</a>
                 <br></br>
-                <div className="footer-info__returns">
-                        Company Policy
-                    </div>
+                <a href="https://github.com/theodorebailey" target="_blank">GitHub</a>
             </section>
             <section className="footer-info">
                 <div className="footer-info-left">
@@ -44,7 +42,6 @@ function Footer () {
                     </div>
                 </div>
             </section>
-            <hr className="footer-seperator"/>
         </section>
     )
 }

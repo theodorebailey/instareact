@@ -19,7 +19,15 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
-    padding-left: 10px;
+  }
+
+  .footer-social-media a {
+    margin-left: 30px;
+    color: black;
+  }
+
+  .footer-social-media a:hover {
+    color: blueviolet;
   }
   
   .footer-social-media__icon {
