@@ -1,7 +1,7 @@
 // import react
 import React from 'react';
 // we can move location as long as items remain in common folder
-import { Navbar } from '../../common';
+import { Navbar, Footer } from '../../common';
 
 import './Header.css';
 
@@ -16,22 +16,13 @@ function Header () {
                 <div className="header-top__logo">
                 </div>
                 {/* navbar section */}
-                {/* <div className='header-top__navbar'>
+                <div className='header-top__navbar'>
                     <div className="header-top__navigation">
                         <Navbar />
                     </div>
-                    <hr className='header-top__seperator'/>
-                </div> */}
+                    {/* <hr className='header-top__seperator'/> */}
+                </div>
             </div>
-            {/* header bottom section navbar */}
-            {/* <section className='header-bottom'>
-                <section className='header-bottom__phone'>
-                    0123 4567 8910
-                </section>
-                <section className='header-bottom__email'>
-                    fridge_excess@gmail.com
-                </section>
-            </section> */}
         </section>
     )
 

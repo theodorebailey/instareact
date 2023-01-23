@@ -5,44 +5,64 @@ import './Footer.css';
 function Footer () {
 
     return (
-        <section className="footer">
-            {/* horizontal line break */}
-            <hr className="footer-seperator"/>
-            <section className="footer-social-media">
-                {/* Link to own Linkedin page */}
-                <a href="https://www.linkedin.com/in/theodore-bailey-software-developer" target="_blank">Linkedin</a>
-                <br></br>
-                <a href="https://github.com/theodorebailey" target="_blank">GitHub</a>
-            </section>
-            <section className="footer-info">
-                <div className="footer-info-left">
-                    <div className="footer-info__name">
-                        Theodore Bailey
-                    </div>
-                    <div className="footer-info__returns">
-                        Company Policy
-                    </div>
-                </div>
-                <div className="footer-info-center">
-                    <div className="footer-info__email">
-                        instreact creation
-                    </div>
-                    <div className="footer-info__terms">
-                        Terms and Conditions
-                        <br />
+        <div className="container">
+            <hr id="sideline"/>
+            <section className="footer">
+                {/* horizontal line break */}
+                <section className="footer-info">
+                        <a className="footer-info__item">
+                            Meta
+                        </a>
+                        <a className="footer-info__item">
+                            About
+                        </a>
+                        <a className="footer-info__item">
+                            Blog
+                        </a>
+                        <a className="footer-info__item">
+                            Jobs
+                        </a>
+                        <a className="footer-info__item">
+                            Help
+                        </a>
+                        <a className="footer-info__item">
+                            API
+                        </a>
+                        <a className="footer-info__item">
+                            Privacy
+                        </a>
+                        <a className="footer-info__item">
+                            Terms
+                        </a>
+                        <a className="footer-info__item">
+                            Top Accounts
+                        </a>
+                        <a className="footer-info__item">
+                            Locations
+                        </a>
+                        <a className="footer-info__item">
+                            Instgram Lite
+                        </a>
+                        <a className="footer-info__item">
+                            Contact
+                        </a>
+                        <a className="footer-info__item">
+                            uploading and non-users
+                        </a>
+                        <a className="footer-info__item">
+                            Digital Collectibles Privacy Notice
+                        </a>
+                        <a className="footer-info__item">
                         Copyright©
-                    </div>
-                </div>
-                <div className="footer-info-right">
-                    <div className="footer-info__number">
-                        0123 4567 8910                      
-                    </div>
-                    <div className="footer-info__contact">
-                        Our Company
-                    </div>
-                </div>
+                        </a>
+                </section>
+                <section className="footer-info">
+                    {/* Link to own Linkedin page */}
+                    <a className="footer-info__item" href="https://www.linkedin.com/in/theodore-bailey-software-developer" target="_blank">Linkedin</a>
+                    <a className="footer-info__item" href="https://github.com/theodorebailey" target="_blank">GitHub</a>
+                </section>
             </section>
-        </section>
+        </div>
     )
 }
 

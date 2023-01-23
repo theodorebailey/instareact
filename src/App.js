@@ -23,9 +23,8 @@ function App() {
       <Header />
         <Routes>
           <Route path='/contact' element= { <PageTitle title='contact'>Contact</PageTitle> } />
-          <Route path='/portfolio' element= { <PageTitle title='portfolio'>Portfolio</PageTitle> } />
-          <Route path='/about' element= { <PageTitle title='about'>About</PageTitle> } />
-          <Route path='/' element= { <PageTitle title='home'>Home</PageTitle> } />
+          <Route path='/profile' element= { <PageTitle title='profile'>Profile</PageTitle> } />
+          <Route path='/' element= { <PageContent></PageContent> }/>
         </Routes>
       <Footer />
     </div>

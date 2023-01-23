@@ -1,47 +1,82 @@
-navbar {
-  /* fits elements inline on row */
-    display: flex;
-    /* decides direction elements will flex, in this case row */
-    flex-direction: row;
-  }
-  
-  navbar-item {
-    /* determines grid element layout */
-    display: flex;
-    /* align flex items */
-    justify-content: center;
-    /* centers items */
-    align-items: center;
-    /* applies margin left side */
-    margin-left: 45px;
-    /* color: inherit; */
-    text-decoration: inherit;
-    /* capitalise text */
-    text-transform: uppercase;
-    /* remove outline if applied */
-    outline: none;
-  }
 
   body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-      monospace;
+
+
+  .navbar {
+  /* fits elements inline on row */
+    display: flex;
+    /* decides direction elements will flex, in this case row */
+    color: white;
+    overflow-y: auto;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    flex-direction: column;
+    align-items: left;
+    height: 100%;
   }
-  
-  ul {
-    list-style: none;
-  }
-  li {
-    list-style: none;
-  }
-  a {
+
+  .sidenav-element {
+    font-size: 4px;
+    display: inline-flex;
+    padding: 30px 8px 8px 32px;
     text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    transition: 0.3s;
   }
+
+  .sidenav-element img {
+    font-size: 18px;
+    line-height: 0;
+    height: 20px;
+    width: auto;
+    margin-top: 5px;
+    /* display: inline-flex; */
+  }
+
+  .sidenav-element a {
+    font-size: 15px;
+  }
+
+  .navbar-item {
+    padding: 5px 10px;
+    text-decoration: none;
+    padding-right: 20px;
+    margin-right: 20px;
+    /* transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045); */
+  } 
+
+  .navbar-last-item {
+    padding-top: 200px;
+  }
+
+  /* .sidenav-element Link {
+    display: flex;
+    color: white;
+    gap: 10px;
+    padding: 5px 10px;
+    border-right: 4px solid transparent;
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    text-decoration: none;
+  
+  } */
+
+#sideline {
+  float: left; 
+  position: absolute;
+  top: -20px;
+  left: 0;
+   width: 200px;  
+   border-right: 1px solid #000000;
+   min-height: 150vh
+}

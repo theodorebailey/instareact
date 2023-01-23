@@ -90,3 +90,28 @@
     font-size: large;
     margin: 0px 20px;
   }
+
+
+  /* .footer-info {
+    display: flex;
+    box-sizing: border-box; 
+    position: relative;
+    font-size: 100%;
+    color: rgb(38, 38, 38);
+    margin: 0 10px;
+  } */
+
+  .footer-info a {
+    display: flex;
+    box-sizing: border-box; 
+    position: relative;
+    font-size: .5em;
+    color: rgb(38, 38, 38);
+    margin: 0 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .footer-info a:hover {
+    text-decoration: underline;  
+  }
