@@ -15,9 +15,10 @@ import Google from './../images/googlePlay.png'
 import Micro from './../images/microsoft.png';
 
 
-const Login = () => {
+// invoke function, update state, pass state back down - requires props
+const Login = (props) => {
 
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState("username");
 
   const [update, setUpdate] = useState(value);
 
@@ -25,7 +26,7 @@ const Login = () => {
     setValue(e.target.value);
   }
  
-  const handleClick = (e) => {
+  const handleClick = () => {
     setUpdate(value);
   }
 
@@ -36,7 +37,7 @@ const Login = () => {
           <form>
               <div className='input_area'>
                   <div className="textbox">
-              <TextField type="text" name="user" id="outlined-basic" className="user" variant="outlined" onChange={handleChange} value={value}/>
+              <TextField type="text" name="user" id="outlined-basic" className="user" variant="outlined" onChange={handleChange}/>
               </div>
               <div className="textbox">
               <TextField id="outlined-basic" />

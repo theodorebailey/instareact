@@ -2,7 +2,7 @@
 import React from 'react';
 
 import { useState } from 'react';
-// import UserContext from './UserContext';
+import Login from './../login'
 
 
 // we can move location as long as items remain in common folder
@@ -25,7 +25,7 @@ import Profile from './../images/profileImage.png';
 const Logged = (props) => {
 
 // Array destructuring
-const [user, setUser] = useState("");
+const [user, setUser] = useState("username");
 
 const [update, setUpdate] = useState(user);
 

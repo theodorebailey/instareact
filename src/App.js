@@ -12,11 +12,11 @@ import './App.css';
 
 function App() {
 
-  const [user, setUser] = useState('userName')
+  const [user, setUser] = useState('username');
 
   return (
     <div className="App">
-U      <Header />
+U      <Header handleClick={user => setUser(user)}/>
        <Footer />
     </div>
   );
