@@ -59,6 +59,7 @@ function Footer () {
                 {/* Link to own Linkedin page */}
                 <a className="footer-info__item" href="https://www.linkedin.com/in/theodore-bailey-software-developer" target="_blank">Linkedin</a>
                 <a className="footer-info__item" href="https://github.com/theodorebailey" target="_blank">GitHub</a>
+                <a className="footer-info__item" href="https://www.instagram.com" target="_blank">Instagram</a>
             </section>
         </section>
     </>

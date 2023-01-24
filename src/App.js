@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 // import react router Dom Components
-import { Routes, Route, useActionData } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 // Import all components
 import { Header, Navbar, Footer, Login } from './components/common'
@@ -11,13 +11,13 @@ import './App.css';
 function App() {
 
   return (
-    <div className="App">      
+    <div className="App">     
       <Header />
-        <Routes>
+        {/* <Routes>
           <Route path='/homepage' />
           <Route path='/profile' />
           <Route path='/' />
-        </Routes>
+        </Routes> */}
       <Footer />
     </div>
   );

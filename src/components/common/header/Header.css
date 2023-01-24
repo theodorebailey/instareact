@@ -120,3 +120,7 @@
 #rightSidebox {
   border: 1px solid rgb(38, 38, 38);
 }
+
+.instagramLink {
+  text-decoration: none;
+}
