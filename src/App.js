@@ -17,6 +17,8 @@ function App() {
 
 
   return (
+    // had big plans for the project but decided to hand in as is
+    // created a side-navbar intending to create a home page with card content like instagram but need to crack on with the course
     <div className="App">
        <Header />
        <Footer />

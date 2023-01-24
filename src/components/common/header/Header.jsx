@@ -51,7 +51,7 @@ function Header () {
           <form>
               <div className='input_area'>
                   <div className="textbox">
-              <TextField type="text" name="user" id="outlined-basic" className="user" variant="outlined" onChange={handleChange}/>
+              <TextField type="text" placeholder="TEXT WILL APPEAR ELSEWHERE" name="user" id="outlined-basic" className="user" variant="outlined" onChange={handleChange}/>
               </div>
               <div className="textbox">
               <TextField id="outlined-basic" />
@@ -84,47 +84,3 @@ function Header () {
 // export component
 export default Header;
 
-
-{/* <div className="app">
-        <div className="container">
-            <div className="container">
-              <div className="container_image">
-                  <img id="dualphone" src={Dualphone} alt="" />
-              </div>
-            </div>
-            <div className="logologin">
-              <div className='instalogo'>
-                <img id="instalogo" src={ Instagram } alt="" />
-              </div>
-            <form>
-            <div className='input_area'>
-                <div className="textbox">
-            <TextField id="outlined-basic" variant="outlined" />
-            </div>
-            <div className="textbox">
-            <TextField id="outlined-basic" />
-            </div>
-        </div>
-        <div className='buttonSection'>  
-          <Button type='submit' className='btn_one' variant="contained">Log in</Button>
-          <hr className="hr-text" />
-          <div className="facebookLoginSection">
-            <p className="facebookText"><img id="facebooklogo" src={Facebook} alt="" /> Log in with Facebook</p>
-            <p className="facebookText">Forgotten your password?</p>
-          </div>
-        </div>
-        <div className="container">
-          <p className="facebookText">Get the app.</p>
-          <div className="container">
-            <img className="appLinks" src={Google} alt="" />
-            <img className="appLinks" src={Micro} alt="" />
-          </div>
-        </div>
-        <div className="container">
-
-
-        </div>
-        </form>
-            </div>
-        </div>
-        {/* TODO - onSubmit  */}
