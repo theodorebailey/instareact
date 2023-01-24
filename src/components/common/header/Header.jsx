@@ -1,7 +1,7 @@
 // import react
 import React from 'react';
 // we can move location as long as items remain in common folder
-import { Navbar, Footer, Login } from '../../common';
+import { Navbar, Footer, Login, Logged } from '../../common';
 import { Link } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
@@ -30,7 +30,11 @@ function Header () {
       <div className="leftSide">
         <img id="dualphone" src={Dualphone} alt="" />
       </div>
+      {/* <Routes>
+        <Route ></Route>
+      </Routes> */}
       <Login />
+      <Logged /> 
     </article>
   </>      
     )

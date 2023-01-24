@@ -2,35 +2,31 @@
 import React from 'react';
 // we can move location as long as items remain in common folder
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import Stack from '@mui/material/Stack';
+
 import Button from '@mui/material/Button';
 
 import Dualphone from './../images/dualphone.png';
 import Instagram from './../images/instagramtext.png';
 import Facebook from './../images/facebook.png'
-
 import Google from './../images/googlePlay.png'
 import Micro from './../images/microsoft.png';
 
 
-import { useState } from 'react';
-
-
 const Login = () => {
 
-  const [message ,setMessage] = useState("");
+  const [value, setValue] = useState("");
 
-  const [update, setUpdate] = useState(message);
+  const [update, setUpdate] = useState(value);
 
   const handleChange = (e) => {
-    setMessage(e.target.value);
+    setValue(e.target.value);
   }
  
   const handleClick = (e) => {
-    setUpdate(message);
+    setUpdate(value);
   }
 
     return ( 
@@ -40,7 +36,7 @@ const Login = () => {
           <form>
               <div className='input_area'>
                   <div className="textbox">
-              <TextField type="text" name="user" id="outlined-basic" className="user" variant="outlined" onChange={handleChange} value={message}/>
+              <TextField type="text" name="user" id="outlined-basic" className="user" variant="outlined" onChange={handleChange} value={value}/>
               </div>
               <div className="textbox">
               <TextField id="outlined-basic" />

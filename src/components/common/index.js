@@ -9,6 +9,7 @@ import Header from './header';
 import Navbar from './navbar';
 import Footer from './footer';
 import Login from './login';
+import Logged from './logged';
 
 
 // export multiples
@@ -16,5 +17,6 @@ export {
     Header,
     Navbar,
     Footer,
-    Login
+    Login,
+    Logged
 }

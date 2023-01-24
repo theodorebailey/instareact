@@ -1,0 +1,17 @@
+.rightside {
+
+
+
+}
+
+#instalogo {
+    justify-content: center;
+    text-align: center;
+    margin: 15px 15px;
+    padding: 15px 15px;
+}
+
+.rounded {
+    border-radius: 50%;
+    height: 100px;
+}
