@@ -20,6 +20,7 @@ function Navbar () {
 
     return (
         <>
+        <hr id="sideline"/>
         <section className="navbar">
         <hr className=""/>
             <div className="sidenav-element">
@@ -32,7 +33,7 @@ function Navbar () {
             </div>
             <div className="sidenav-element">
                 <img src={Search} alt="" />
-                <Link to="/search" className="navbar-item">Search</Link>
+                <Link to="/profile" className="navbar-item">Search</Link>
             </div>
             <div className="sidenav-element">
                 <img src={Explore} alt="" />
@@ -40,19 +41,19 @@ function Navbar () {
             </div>
             <div className="sidenav-element">
                 <img src={Reels} alt="" />
-                <Link to="/contact" className="navbar-item">Reels</Link>
+                <Link to="/profile" className="navbar-item">Reels</Link>
             </div>
             <div className="sidenav-element">
                 <img src={Messages} alt="" />
-                <Link to="/" className="navbar-item">Messages</Link>
+                <Link to="/profile" className="navbar-item">Messages</Link>
             </div>
             <div className="sidenav-element">
                 <img src={Notifications} alt="" />
-                <Link to="/" className="navbar-item">Notifications</Link>
+                <Link to="/profile" className="navbar-item">Notifications</Link>
             </div>
             <div className="sidenav-element">
                 <img src={Create} alt="" />
-                <Link to="/" className="navbar-item">Create</Link>
+                <Link to="/profile" className="navbar-item">Create</Link>
             </div>
             <div className="sidenav-element">
                 <img src={Profile} alt="" />

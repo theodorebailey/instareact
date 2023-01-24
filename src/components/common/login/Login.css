@@ -1,0 +1,16 @@
+.loginImage {
+    height: 400px;
+    width: auto;
+    /* justify-content: center; */
+    margin-top: 100px;
+    margin-right: 100px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+}
+
+.signinbox {
+    border-color: 1px solid black;
+}

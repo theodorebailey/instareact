@@ -1,108 +1,122 @@
-.header {
-    margin-top: 20px;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-  }
+/* .app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  display: inline-flex;
+  justify-content: space-between;
+}
+  */
   
-  .header-top {
-    display: flex;
-    width: 100%;
-    height: 80px;
-  }
-  
-  .header-top__logo {
-    display: flex;
+.container {
+  box-shadow: 0px 0px 12px rgb(255, 255, 255);
+  padding: 3rem;
+  display: inline-flex;
+  width: 100%;
+  /* border: 1px solid rgb(38, 38, 38); */
+}
+
+.logologin {
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+#dualphone {
+  height: 50vh;
+  width: auto;
+  margin: 100px 20px;
+  padding: 100px 50px;
+}
+
+#instalogo {
+  width: auto;
+  height: 51px;
+    white-space: nowrap;
+    overflow-x: auto;
+    /* clear: both;
     justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-  }
-  
-  .header-logo {
-    color: inherit;
-    text-decoration: inherit;
-    font-family: RobotoThin;
-    font-size: 100px;
-  }
-  
-  .header-top__navbar {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-  }
-  
-  .header-top__seperator {
-    width: 100%;
-    border: none;
-    height: 2px;
-    margin-top: 2px;
-    background-color: black;
-  }
-  
-  .header-top__navigation {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 55px;
-  }
-  
-  .header-bottom {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 6px;
-  }
-  
-  .header-bottom__email {
-    margin-right: 55px;
-  }
-  
-  .header-bottom__phone {
-    margin-right: 65px;
-  }
-  
-  .header-bottom__bag {
-    position: absolute;
-    display: flex;
-  }
-  
-  .header-bottom__bag-icon {
-    position: relative;
-    display: flex;
-    left: -5px;
-    width: 30px;
-    height: 30px; 
-  }
-  
-  .header-bottom__bag-count {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: RobotoRegular;
-    right: 0px;
-    top: -5px;
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 10px;
-    color: white;
-  }
+    text-align: center; */
+    display: block;
+    float: none;
+    margin-left: 70px;
+}
+ 
 
-  .img {
+#outlined-basic {
+  width: 300px;
+  height: 10px;
+  padding-top: 15px;
+}
+ 
+.textbox {
+  padding-top: 10px;
+}
 
-    width: 100%;
-    height: auto;
+.buttonSection {
+  margin-top: 15px;
+  padding: 9px 0 7px 8px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-    /* border-radius: 8px;
-    border: 1px solid black;
-    height: auto;
-    transform: rotate(90deg); */
-  }
+.btn_one {
+  width: 200px;
+  height: 50px;
+}
 
-  #fridgeImage {
-    height: auto;
-    width: 20vh;
+.hr-text {
+  width: 60%;
+  margin-top: 30px;
+}
+
+.facebookLoginSection {
+  margin-top: 30px;
+}
+
+#facebooklogo {
+  height: 12px;
+  padding-right: 10px;
+  margin-top: 5px;
+}
+
+.facebookText {
+  font-size: 12px;
+  margin-bottom: 25px;
+  width: 100%;
+  display: block;
+}
+
+
+.googleLinks {
+  width: 90px;
+  margin-left: 30px;
+  height: auto;
+}
+
+.microLinks {
+  width: 75px;
+  margin-left: 30px;
+  height: auto;
+}
+
+#loginSection {
+  display: inline-flex;
+
+}
+
+.leftside {
+  
+}
+
+.rightSide {
+  display: block;
+  border: 1px solid rgb(38, 38, 38);
+  margin: 100px 20px;
+  padding: 30px 20px;
+}
+
+#rightSidebox {
+  border: 1px solid rgb(38, 38, 38);
 }
