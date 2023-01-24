@@ -24,24 +24,14 @@ import Profile from './../images/profileImage.png';
 
 const Logged = (props) => {
 
+    const user = props.user;
+
+    console.log(props);
+    console.log(props.user);
+
 // Array destructuring
-const [user, setUser] = useState("username");
-
-const [update, setUpdate] = useState(user);
-
-
-const handleChange = (e) => {
-    setUser(e.target.value);
-}
-
-
-const handleClick = (e) => {
-    setUpdate(user);
-}
-
 
     return (
-        
         <>
         <div className="rightSide">
           <img id="instalogo" src={ Instagram } alt="" />
@@ -50,15 +40,13 @@ const handleClick = (e) => {
             </div>
             <img class="rounded" src={ Profile } alt="" />
             <div className='buttonSection'>
-            <Button type='submit' className='btn_one' variant="contained" onSubmit={ handleClick }>Continue as { user }.</Button>
+            <Button type='submit' className='btn_one' variant="contained">Continue as { user }.</Button>
             <div className="facebookLoginSection">
               <p className="facebookText">Not { user }? <a href="">Switch accounts</a></p>
             </div>
           </div>
           </form>
       </div>
-        
-
         </>
 
      );
